@@ -3,6 +3,7 @@ import { Button } from "./components/Button";
 import { defaultTheme } from './styles/themes/default';
 import { darkTheme } from './styles/themes/dark';
 import { useState } from 'react';
+import { GlobalStyle } from './styles/global'
 
 export function App() {
   const [theme, setTheme] = useState(defaultTheme);
@@ -18,6 +19,8 @@ export function App() {
       <Button variant="success"/>
       <Button variant="danger"/>
       <Button />
+
+      <GlobalStyle />
     </ThemeProvider>
   )
 }
